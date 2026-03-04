@@ -43,8 +43,7 @@ const Index = () => {
               Your Path to <span className="text-primary">Mental Wellness</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up-delay-1">
-              Compassionate, evidence-based therapy to help you navigate life's challenges
-              and discover your inner strength.
+              Compassionate psychiatric care and medication management designed to help you manage symptoms, restore balance, and improve everyday life.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in-up-delay-2">
               <Link
