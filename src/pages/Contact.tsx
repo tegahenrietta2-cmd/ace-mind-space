@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Printer } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -99,6 +99,13 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
                       <p>(555) 123-4567</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Printer size={18} className="text-primary mt-0.5" />
+                    <div>
+                      <p className="font-medium text-foreground">Fax</p>
+                      <p>(832) 336-3864</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
