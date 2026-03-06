@@ -98,7 +98,8 @@ const Contact = () => {
                     <Phone size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
-                      <p>(555) 123-4567</p>
+                      <p>(325) 221-0076</p>
+                      <p>(346) 202-4840</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -112,14 +113,14 @@ const Contact = () => {
                     <Mail size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <p>hello@acepointhealth.com</p>
+                      <p>ace@acepointhealth.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Address</p>
-                      <p>123 Wellness Way<br />Suite 200, Tranquil City</p>
+                      <p>2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</p>
                     </div>
                   </div>
                 </div>

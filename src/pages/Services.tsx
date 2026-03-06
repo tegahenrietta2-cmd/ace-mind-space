@@ -1,38 +1,33 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, Brain, Users, Baby, Sparkles, HeartHandshake, Clock } from "lucide-react";
+import { ArrowRight, Brain, Users, Sparkles, HeartHandshake, Clock, ShieldCheck } from "lucide-react";
 
 const services = [
   {
     icon: Brain,
-    title: "Individual Therapy",
-    desc: "One-on-one sessions tailored to your unique needs, addressing anxiety, depression, trauma, and more.",
-  },
-  {
-    icon: Users,
-    title: "Couples Counseling",
-    desc: "Strengthen your relationship through improved communication, conflict resolution, and deeper connection.",
-  },
-  {
-    icon: Baby,
-    title: "Family Therapy",
-    desc: "Navigate family dynamics and build healthier relationships with guidance from experienced therapists.",
+    title: "Psychiatric Evaluation",
+    desc: "Comprehensive psychiatric assessments to accurately diagnose and develop personalized treatment plans.",
   },
   {
     icon: Sparkles,
-    title: "Stress Management",
-    desc: "Learn practical coping strategies and mindfulness techniques to manage life's daily pressures.",
+    title: "Medication Management",
+    desc: "Expert medication prescribing and ongoing monitoring to optimize your treatment and minimize side effects.",
+  },
+  {
+    icon: Users,
+    title: "Telepsychiatry Services",
+    desc: "Convenient virtual appointments that bring quality psychiatric care to you from the comfort of your home.",
   },
   {
     icon: HeartHandshake,
-    title: "Trauma & PTSD",
-    desc: "Specialized trauma-informed care using EMDR, somatic experiencing, and cognitive processing therapy.",
+    title: "Mood & Anxiety Disorder Treatment",
+    desc: "Specialized evaluation and evidence-based treatment for depression, bipolar disorder, generalized anxiety, and more.",
   },
   {
     icon: Clock,
-    title: "Crisis Support",
-    desc: "Immediate support during difficult moments with flexible scheduling and same-day availability options.",
+    title: "Trauma & PTSD Care",
+    desc: "Compassionate, trauma-informed care to help you process and heal from traumatic experiences.",
   },
 ];
 
@@ -73,6 +68,22 @@ const Services = () => (
     </section>
 
     <section className="py-20 bg-secondary">
+      <div className="container">
+        <h2 className="font-display text-3xl font-bold text-center mb-4">Insurance We Accept</h2>
+        <p className="text-muted-foreground text-center max-w-xl mx-auto mb-10">
+          We work with major insurance providers to make quality psychiatric care accessible.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto mb-12">
+          {["Medicare/Medicaid", "Aetna", "Blue Cross Blue Shield", "Cigna", "UnitedHealthcare/Optum", "Humana"].map((ins) => (
+            <div key={ins} className="bg-card rounded-xl p-4 border border-border text-center flex items-center justify-center">
+              <span className="text-sm font-medium text-foreground">{ins}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-20">
       <div className="container text-center">
         <h2 className="font-display text-3xl font-bold mb-4">Not Sure Where to Start?</h2>
         <p className="text-muted-foreground max-w-xl mx-auto mb-8">
