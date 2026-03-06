@@ -25,10 +25,11 @@ const Footer = () => (
         <div>
           <h4 className="font-display text-lg font-semibold mb-4">Get in Touch</h4>
           <div className="flex flex-col gap-3 text-sm text-primary-foreground/80">
-            <span className="flex items-center gap-2"><Phone size={14} /> (555) 123-4567</span>
+            <span className="flex items-center gap-2"><Phone size={14} /> (325) 221-0076</span>
+            <span className="flex items-center gap-2"><Phone size={14} /> (346) 202-4840</span>
             <span className="flex items-center gap-2"><span className="text-xs">📠</span> (832) 336-3864</span>
-            <span className="flex items-center gap-2"><Mail size={14} /> hello@acepointhealth.com</span>
-            <span className="flex items-center gap-2"><MapPin size={14} /> 123 Wellness Way</span>
+            <span className="flex items-center gap-2"><Mail size={14} /> ace@acepointhealth.com</span>
+            <span className="flex items-center gap-2"><MapPin size={14} /> 2404 Greenhouse Rd, Suite D 1020, Houston, TX 77084</span>
           </div>
         </div>
       </div>
