@@ -2,6 +2,21 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Users, Sparkles, HeartHandshake, Clock, ShieldCheck } from "lucide-react";
+import insuranceMedicare from "@/assets/insurance-medicare.png";
+import insuranceAetna from "@/assets/insurance-aetna.png";
+import insuranceBcbs from "@/assets/insurance-bcbs.png";
+import insuranceCigna from "@/assets/insurance-cigna.png";
+import insuranceUhc from "@/assets/insurance-uhc.png";
+import insuranceHumana from "@/assets/insurance-humana.png";
+
+const insuranceProviders = [
+  { name: "Medicare/Medicaid", logo: insuranceMedicare },
+  { name: "Aetna", logo: insuranceAetna },
+  { name: "Blue Cross Blue Shield", logo: insuranceBcbs },
+  { name: "Cigna", logo: insuranceCigna },
+  { name: "UnitedHealthcare/Optum", logo: insuranceUhc },
+  { name: "Humana", logo: insuranceHumana },
+];
 
 const services = [
   {
@@ -73,10 +88,10 @@ const Services = () => (
         <p className="text-muted-foreground text-center max-w-xl mx-auto mb-10">
           We work with major insurance providers to make quality psychiatric care accessible.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto mb-12">
-          {["Medicare/Medicaid", "Aetna", "Blue Cross Blue Shield", "Cigna", "UnitedHealthcare/Optum", "Humana"].map((ins) => (
-            <div key={ins} className="bg-card rounded-xl p-4 border border-border text-center flex items-center justify-center">
-              <span className="text-sm font-medium text-foreground">{ins}</span>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto mb-12">
+          {insuranceProviders.map((ins) => (
+            <div key={ins.name} className="bg-card rounded-xl p-6 border border-border flex items-center justify-center hover:shadow-md transition-shadow">
+              <img src={ins.logo} alt={ins.name} className="h-12 w-auto object-contain" />
             </div>
           ))}
         </div>
