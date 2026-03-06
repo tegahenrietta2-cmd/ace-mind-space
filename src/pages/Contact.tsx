@@ -98,29 +98,29 @@ const Contact = () => {
                     <Phone size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
-                      <p>(325) 221-0076</p>
-                      <p>(346) 202-4840</p>
+                      <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a>
+                      <a href="tel:3462024840" className="hover:text-primary transition-colors block">(346) 202-4840</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Printer size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Fax</p>
-                      <p>(832) 336-3864</p>
+                      <a href="tel:8323363864" className="hover:text-primary transition-colors">(832) 336-3864</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mail size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <p>ace@acepointhealth.com</p>
+                      <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors">ace@acepointhealth.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin size={18} className="text-primary mt-0.5" />
                     <div>
                       <p className="font-medium text-foreground">Address</p>
-                      <p>2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</p>
+                      <a href="https://maps.google.com/?q=2404+Greenhouse+Rd+Suite+D+1020+Houston+TX+77084" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</a>
                     </div>
                   </div>
                 </div>
