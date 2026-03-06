@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Shield, Users } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import heroSlide1 from "@/assets/hero-slide-1.jpg";
+import heroSlide2 from "@/assets/hero-slide-2.jpg";
+import heroSlide3 from "@/assets/hero-slide-3.jpg";
+
+const heroSlides = [heroSlide1, heroSlide2, heroSlide3];
 
 const features = [
   {
@@ -23,29 +28,60 @@ const features = [
 ];
 
 const Index = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />
 
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center pt-20">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+        {/* 3D Sliding Background */}
+        <div className="absolute inset-0" style={{ perspective: "1200px" }}>
+          {heroSlides.map((slide, i) => {
+            const offset = i - currentSlide;
+            return (
+              <div
+                key={i}
+                className="absolute inset-0 transition-all duration-[1.2s] ease-in-out"
+                style={{
+                  backgroundImage: `url(${slide})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  opacity: offset === 0 ? 1 : 0,
+                  transform: `translateZ(${offset === 0 ? "0px" : offset > 0 ? "-300px" : "100px"}) 
+                              translateX(${offset * 30}%) 
+                              rotateY(${offset * -15}deg)
+                              scale(${offset === 0 ? 1 : 0.85})`,
+                  zIndex: offset === 0 ? 1 : 0,
+                }}
+              />
+            );
+          })}
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/60 z-[2]" />
+
         <div className="container relative z-10">
           <div className="max-w-2xl">
-            <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4 animate-fade-in-up">
+            <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4 animate-fade-in">
               Welcome to Acepoint Health
             </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-foreground animate-fade-in-up">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-foreground animate-fade-in">
               Your Path to <span className="text-primary">Mental Wellness</span>
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up-delay-1">
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in">
               We provide thoughtful medication management and mental health care tailored to your unique needs, helping you regain stability, clarity, and confidence.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4 animate-fade-in-up-delay-2">
+            <div className="mt-8 flex flex-wrap gap-4 animate-fade-in">
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
@@ -58,6 +94,19 @@ const Index = () => {
               >
                 Our Services
               </Link>
+            </div>
+
+            {/* Slide indicators */}
+            <div className="mt-10 flex gap-2">
+              {heroSlides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentSlide(i)}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${
+                    i === currentSlide ? "w-8 bg-primary" : "w-3 bg-primary/30"
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
