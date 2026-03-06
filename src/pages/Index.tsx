@@ -72,9 +72,6 @@ const Index = () => {
 
         <div className="container relative z-10">
           <div className="max-w-2xl">
-            <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4 animate-fade-in">
-              Welcome to Acepoint Health
-            </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-foreground animate-fade-in">
               Your Path to <span className="text-primary">Mental Wellness</span>
             </h1>
