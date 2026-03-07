@@ -25,26 +25,26 @@ const About = () => (
       </div>
     </section>
 
-    <section className="py-20 bg-secondary">
-      <div className="container">
-        <h2 className="font-display text-3xl font-bold text-center mb-4">Our Mission</h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-4">
+    <section className="py-12 md:py-20 bg-secondary">
+      <div className="container px-5 md:px-8">
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">Our Mission</h2>
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto text-sm md:text-base">
           To provide accessible, high-quality mental health care that empowers individuals 
           and families to live their most authentic lives.
         </p>
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="container">
-        <h2 className="font-display text-3xl font-bold text-center mb-16">Our Values</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+    <section className="py-14 md:py-24">
+      <div className="container px-5 md:px-8">
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-center mb-10 md:mb-16">Our Values</h2>
+        <div className="grid gap-6 md:grid-cols-3 md:gap-8">
           {values.map((v) => (
             <div key={v.title} className="text-center">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
-                <v.icon className="text-primary" size={28} />
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 md:mb-5">
+                <v.icon className="text-primary" size={26} />
               </div>
-              <h3 className="font-display text-xl font-semibold mb-2">{v.title}</h3>
+              <h3 className="font-display text-lg md:text-xl font-semibold mb-1.5 md:mb-2">{v.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto">{v.desc}</p>
             </div>
           ))}
