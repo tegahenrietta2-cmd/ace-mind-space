@@ -62,18 +62,18 @@ const Services = () => (
       </div>
     </section>
 
-    <section className="pb-24">
-      <div className="container">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="pb-16 md:pb-24">
+      <div className="container px-5 md:px-8">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
           {services.map((s) => (
             <div
               key={s.title}
-              className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg hover:border-primary/30 transition-all group"
+              className="bg-card rounded-2xl p-6 md:p-8 border border-border hover:shadow-lg hover:border-primary/30 transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-5 transition-colors">
-                <s.icon className="text-primary" size={24} />
+              <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-4 md:mb-5 transition-colors">
+                <s.icon className="text-primary" size={22} />
               </div>
-              <h3 className="font-display text-xl font-semibold mb-2">{s.title}</h3>
+              <h3 className="font-display text-lg md:text-xl font-semibold mb-1.5 md:mb-2">{s.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
             </div>
           ))}
