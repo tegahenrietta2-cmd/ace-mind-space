@@ -14,7 +14,7 @@ const About = () => (
 
     <section className="pt-32 pb-20">
       <div className="container">
-        <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4">About Us</p>
+        
         <h1 className="font-display text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
           Dedicated to Your <span className="text-primary">Mental Health</span> & Wellbeing
         </h1>

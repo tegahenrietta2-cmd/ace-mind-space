@@ -88,11 +88,9 @@ const Services = () => (
         <p className="text-muted-foreground text-center max-w-xl mx-auto mb-10">
           We work with major insurance providers to make quality psychiatric care accessible.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-10 max-w-5xl mx-auto mb-12">
           {insuranceProviders.map((ins) => (
-            <div key={ins.name} className="bg-card rounded-xl p-6 border border-border flex items-center justify-center hover:shadow-md transition-shadow">
-              <img src={ins.logo} alt={ins.name} className="h-12 w-auto object-contain" />
-            </div>
+            <img key={ins.name} src={ins.logo} alt={ins.name} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
           ))}
         </div>
       </div>
