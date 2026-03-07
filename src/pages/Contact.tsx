@@ -18,13 +18,12 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="pt-32 pb-20">
-        <div className="container">
-          
-          <h1 className="font-display text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20">
+        <div className="container px-5 md:px-8">
+          <h1 className="font-display text-3xl md:text-5xl font-bold max-w-3xl leading-tight">
             We'd Love to <span className="text-primary">Hear From You</span>
           </h1>
-          <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-2xl">
+          <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
             Reach out to schedule an appointment, ask a question, or simply learn more about our services.
           </p>
         </div>
