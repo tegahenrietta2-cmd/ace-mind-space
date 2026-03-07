@@ -12,13 +12,12 @@ const About = () => (
   <div className="min-h-screen">
     <Navbar />
 
-    <section className="pt-32 pb-20">
-      <div className="container">
-        
-        <h1 className="font-display text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+    <section className="pt-24 md:pt-32 pb-12 md:pb-20">
+      <div className="container px-5 md:px-8">
+        <h1 className="font-display text-3xl md:text-5xl font-bold max-w-3xl leading-tight">
           Dedicated to Your <span className="text-primary">Mental Health</span> & Wellbeing
         </h1>
-        <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-2xl">
+        <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
           At Acepoint Health, we believe that mental wellness is the foundation of a fulfilling life. 
           Our team of licensed professionals provides personalized, evidence-based therapy in a warm 
           and welcoming environment.
