@@ -110,24 +110,24 @@ const Index = () => {
       </section>
 
       {/* Features */}
-      <section className="py-24 bg-secondary">
-        <div className="container">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4">
+      <section className="py-14 md:py-24 bg-secondary">
+        <div className="container px-5 md:px-8">
+          <h2 className="font-display text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4">
             Why Choose Acepoint Health?
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 md:mb-16 text-sm md:text-base">
             We believe everyone deserves access to quality mental health care in a nurturing environment.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-5 md:grid-cols-3 md:gap-8">
             {features.map((f) => (
               <div
                 key={f.title}
-                className="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
+                className="bg-card rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow border border-border"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                  <f.icon className="text-primary" size={24} />
+                <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 md:mb-5">
+                  <f.icon className="text-primary" size={22} />
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-2">{f.title}</h3>
+                <h3 className="font-display text-lg md:text-xl font-semibold mb-1.5 md:mb-2">{f.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}
@@ -136,18 +136,18 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24">
-        <div className="container">
-          <div className="bg-primary rounded-3xl p-12 md:p-16 text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+      <section className="py-14 md:py-24">
+        <div className="container px-5 md:px-8">
+          <div className="bg-primary rounded-2xl md:rounded-3xl p-8 md:p-16 text-center">
+            <h2 className="font-display text-2xl md:text-4xl font-bold text-primary-foreground mb-3 md:mb-4">
               Ready to Begin Your Journey?
             </h2>
-            <p className="text-primary-foreground/80 max-w-xl mx-auto mb-8">
+            <p className="text-primary-foreground/80 max-w-xl mx-auto mb-6 md:mb-8 text-sm md:text-base">
               Taking the first step is often the hardest. We're here to walk alongside you every step of the way.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-card text-primary px-8 py-3.5 font-semibold hover:bg-card/90 transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 rounded-lg bg-card text-primary px-6 py-3 md:px-8 md:py-3.5 font-semibold hover:bg-card/90 transition-colors shadow-lg text-sm md:text-base"
             >
               Schedule a Consultation <ArrowRight size={16} />
             </Link>

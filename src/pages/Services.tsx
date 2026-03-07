@@ -81,29 +81,29 @@ const Services = () => (
       </div>
     </section>
 
-    <section className="py-20 bg-secondary">
-      <div className="container">
-        <h2 className="font-display text-3xl font-bold text-center mb-4">Insurance We Accept</h2>
-        <p className="text-muted-foreground text-center max-w-xl mx-auto mb-10">
+    <section className="py-12 md:py-20 bg-secondary">
+      <div className="container px-5 md:px-8">
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">Insurance We Accept</h2>
+        <p className="text-muted-foreground text-center max-w-xl mx-auto mb-8 md:mb-10 text-sm md:text-base">
           We work with major insurance providers to make quality psychiatric care accessible.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-10 max-w-5xl mx-auto mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 max-w-5xl mx-auto mb-12">
           {insuranceProviders.map((ins) => (
-            <img key={ins.name} src={ins.logo} alt={ins.name} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <img key={ins.name} src={ins.logo} alt={ins.name} className="h-10 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
           ))}
         </div>
       </div>
     </section>
 
-    <section className="py-20">
-      <div className="container text-center">
-        <h2 className="font-display text-3xl font-bold mb-4">Not Sure Where to Start?</h2>
-        <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+    <section className="py-14 md:py-20">
+      <div className="container text-center px-5 md:px-8">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-3 md:mb-4">Not Sure Where to Start?</h2>
+        <p className="text-muted-foreground max-w-xl mx-auto mb-6 md:mb-8 text-sm md:text-base">
           Book a free 15-minute consultation and we'll help you find the right path forward.
         </p>
         <Link
           to="/contact"
-          className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+          className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 md:px-7 md:py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
         >
           Book a Consultation <ArrowRight size={16} />
         </Link>

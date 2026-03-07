@@ -52,15 +52,15 @@ const About = () => (
       </div>
     </section>
 
-    <section className="py-20 bg-secondary">
-      <div className="container max-w-3xl text-center">
-        <h2 className="font-display text-3xl font-bold mb-6">Our Story</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">
+    <section className="py-12 md:py-20 bg-secondary">
+      <div className="container max-w-3xl text-center px-5 md:px-8">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 md:mb-6">Our Story</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4 text-sm md:text-base">
           Founded with the vision that everyone deserves compassionate mental health care, 
           Acepoint Health has grown from a small practice into a trusted wellness partner 
           for hundreds of individuals and families in our community.
         </p>
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
           Our team brings together diverse expertise in cognitive-behavioral therapy, 
           mindfulness-based approaches, trauma-informed care, and family systems therapy — 
           ensuring that we can meet you wherever you are on your journey.

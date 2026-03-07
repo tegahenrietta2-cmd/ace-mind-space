@@ -29,14 +29,14 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="pb-24">
-        <div className="container">
-          <div className="grid lg:grid-cols-5 gap-12">
+      <section className="pb-16 md:pb-24">
+        <div className="container px-5 md:px-8">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Form */}
             <div className="lg:col-span-3">
-              <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-8 border border-border shadow-sm">
-                <h2 className="font-display text-2xl font-semibold mb-6">Send Us a Message</h2>
-                <div className="grid md:grid-cols-2 gap-4 mb-4">
+              <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-6 md:p-8 border border-border shadow-sm">
+                <h2 className="font-display text-xl md:text-2xl font-semibold mb-5 md:mb-6">Send Us a Message</h2>
+                <div className="grid sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className="text-sm font-medium mb-1.5 block text-foreground">Full Name</label>
                     <input
@@ -68,11 +68,11 @@ const Contact = () => {
                     placeholder="(555) 000-0000"
                   />
                 </div>
-                <div className="mb-6">
+                <div className="mb-5 md:mb-6">
                   <label className="text-sm font-medium mb-1.5 block text-foreground">Message</label>
                   <textarea
                     required
-                    rows={5}
+                    rows={4}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring resize-none"
@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="rounded-lg bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors w-full md:w-auto"
+                  className="rounded-lg bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors w-full sm:w-auto"
                 >
                   Send Message
                 </button>
@@ -89,12 +89,12 @@ const Contact = () => {
             </div>
 
             {/* Info */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:col-span-2 space-y-6 md:space-y-8">
               <div>
-                <h3 className="font-display text-xl font-semibold mb-4">Contact Information</h3>
+                <h3 className="font-display text-lg md:text-xl font-semibold mb-3 md:mb-4">Contact Information</h3>
                 <div className="space-y-4 text-sm text-muted-foreground">
                   <div className="flex items-start gap-3">
-                    <Phone size={18} className="text-primary mt-0.5" />
+                    <Phone size={18} className="text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
                       <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a>
@@ -102,21 +102,21 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Printer size={18} className="text-primary mt-0.5" />
+                    <Printer size={18} className="text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Fax</p>
                       <a href="tel:8323363864" className="hover:text-primary transition-colors">(832) 336-3864</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Mail size={18} className="text-primary mt-0.5" />
+                    <Mail size={18} className="text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors">ace@acepointhealth.com</a>
+                      <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors break-all">ace@acepointhealth.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <MapPin size={18} className="text-primary mt-0.5" />
+                    <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Address</p>
                       <a href="https://maps.google.com/?q=2404+Greenhouse+Rd+Suite+D+1020+Houston+TX+77084" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</a>
@@ -125,10 +125,10 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-secondary rounded-2xl p-6">
+              <div className="bg-secondary rounded-2xl p-5 md:p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <Clock size={18} className="text-primary" />
-                  <h3 className="font-display text-lg font-semibold">Office Hours</h3>
+                  <h3 className="font-display text-base md:text-lg font-semibold">Office Hours</h3>
                 </div>
                 <div className="text-sm text-muted-foreground space-y-1.5">
                   <p>Monday – Friday: 8:00 AM – 7:00 PM</p>
