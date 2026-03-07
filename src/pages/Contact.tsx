@@ -20,7 +20,7 @@ const Contact = () => {
 
       <section className="pt-32 pb-20">
         <div className="container">
-          <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4">Contact Us</p>
+          
           <h1 className="font-display text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
             We'd Love to <span className="text-primary">Hear From You</span>
           </h1>
