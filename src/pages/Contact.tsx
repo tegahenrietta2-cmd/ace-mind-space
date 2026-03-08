@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock, Printer } from "lucide-react";
+import { Phone, Mail, MapPin, Printer } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -125,17 +125,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-secondary rounded-2xl p-5 md:p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Clock size={18} className="text-primary" />
-                  <h3 className="font-display text-base md:text-lg font-semibold">Office Hours</h3>
-                </div>
-                <div className="text-sm text-muted-foreground space-y-1.5">
-                  <p>Monday – Friday: 8:00 AM – 7:00 PM</p>
-                  <p>Saturday: 9:00 AM – 3:00 PM</p>
-                  <p>Sunday: Closed</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
