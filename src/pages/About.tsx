@@ -18,7 +18,7 @@ const About = () => (
           Dedicated to Your <span className="text-primary">Mental Health</span> & Wellbeing
         </h1>
         <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
-          At Acepoint Health, we believe that mental wellness is the foundation of a fulfilling life. 
+          At Acepoint Mental Health, we believe that mental wellness is the foundation of a fulfilling life. 
           Our team of licensed professionals provides personalized, evidence-based therapy in a warm 
           and welcoming environment.
         </p>
