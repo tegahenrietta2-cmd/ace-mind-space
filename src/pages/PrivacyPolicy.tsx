@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-4">
-            Last Updated: March 1, 2026 — Acepoint Health
+            Last Updated: March 1, 2026 — Acepoint Mental Health
           </p>
         </div>
       </section>
