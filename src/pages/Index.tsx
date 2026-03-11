@@ -113,7 +113,7 @@ const Index = () => {
       <section className="py-14 md:py-24 bg-secondary">
         <div className="container px-5 md:px-8">
           <h2 className="font-display text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4">
-            Why Choose Acepoint Health?
+            Why Choose Acepoint Mental Health?
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 md:mb-16 text-sm md:text-base">
             We believe everyone deserves access to quality mental health care in a nurturing environment.

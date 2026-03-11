@@ -16,7 +16,7 @@ const HipaaNotice = () => {
             </h1>
           </div>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
-            Effective Date: January 1, 2026 — Acepoint Health
+            Effective Date: January 1, 2026 — Acepoint Mental Health
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ const HipaaNotice = () => {
               For questions about this notice or to exercise your rights, please contact our Privacy Officer:
             </p>
             <div className="mt-4 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Acepoint Health — Privacy Officer</strong></p>
+              <p><strong className="text-foreground">Acepoint Mental Health — Privacy Officer</strong></p>
               <p>Phone: <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a></p>
               <p>Email: <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors">ace@acepointhealth.com</a></p>
               <p>Address: 2404 Greenhouse Rd, Suite D 1020, Houston, TX 77084</p>
@@ -105,7 +105,7 @@ const HipaaNotice = () => {
               Federal & State Regulations
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Acepoint Health complies with all applicable federal and state regulations regarding mental health care and privacy, including:
+              Acepoint Mental Health complies with all applicable federal and state regulations regarding mental health care and privacy, including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
               <li><strong className="text-foreground">HIPAA Privacy Rule</strong> (45 CFR Part 160 and Subparts A and E of Part 164)</li>

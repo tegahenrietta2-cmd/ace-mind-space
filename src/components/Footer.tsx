@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Heart, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/acepoint-logo.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
     <div className="container py-10 md:py-16 px-5 md:px-8">
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
         <div className="sm:col-span-2">
-          <h3 className="font-display text-xl md:text-2xl font-bold mb-2 md:mb-3">Acepoint Health</h3>
+          <img src={logo} alt="Acepoint Mental Health" className="h-12 w-auto mb-3 brightness-0 invert" />
           <p className="text-primary-foreground/80 max-w-md text-sm leading-relaxed">
             Compassionate, evidence-based mental health care designed to help you thrive. 
             Your journey to wellness starts here.
@@ -34,7 +35,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-primary-foreground/20 mt-8 md:mt-12 pt-5 md:pt-6 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 text-xs text-primary-foreground/60">
-        <span>© 2026 Acepoint Health. All rights reserved.</span>
+        <span>© 2026 Acepoint Mental Health. All rights reserved.</span>
         <span className="flex items-center gap-1">Made with <Heart size={12} className="text-accent" /> for your wellbeing</span>
       </div>
     </div>

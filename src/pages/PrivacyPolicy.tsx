@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-4">
-            Last Updated: March 1, 2026 — Acepoint Health
+            Last Updated: March 1, 2026 — Acepoint Mental Health
           </p>
         </div>
       </section>
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="font-display text-2xl font-bold mb-3 text-foreground">Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Acepoint Health ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully.
+              Acepoint Mental Health ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm mt-3">
               <li>Service providers who assist in our operations (e.g., billing, IT support)</li>
               <li>As required by law, regulation, or legal proceedings</li>
-              <li>To protect the rights, property, or safety of Acepoint Health, our patients, or others</li>
+              <li>To protect the rights, property, or safety of Acepoint Mental Health, our patients, or others</li>
               <li>With your explicit consent</li>
             </ul>
           </div>
@@ -137,10 +137,10 @@ const PrivacyPolicy = () => {
               If you have questions about this Privacy Policy, please contact us:
             </p>
             <div className="mt-4 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Acepoint Health — Privacy Officer</strong></p>
-              <p>Phone: (555) 123-4567</p>
-              <p>Email: privacy@acepointhealth.com</p>
-              <p>Address: 123 Wellness Way</p>
+              <p><strong className="text-foreground">Acepoint Mental Health — Privacy Officer</strong></p>
+              <p>Phone: <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a></p>
+              <p>Email: <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors">ace@acepointhealth.com</a></p>
+              <p>Address: 2404 Greenhouse Rd, Suite D 1020, Houston, TX 77084</p>
             </div>
           </div>
         </div>
