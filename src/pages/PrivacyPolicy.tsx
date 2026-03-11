@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm mt-3">
               <li>Service providers who assist in our operations (e.g., billing, IT support)</li>
               <li>As required by law, regulation, or legal proceedings</li>
-              <li>To protect the rights, property, or safety of Acepoint Health, our patients, or others</li>
+              <li>To protect the rights, property, or safety of Acepoint Mental Health, our patients, or others</li>
               <li>With your explicit consent</li>
             </ul>
           </div>
