@@ -93,7 +93,7 @@ const HipaaNotice = () => {
               For questions about this notice or to exercise your rights, please contact our Privacy Officer:
             </p>
             <div className="mt-4 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Acepoint Health — Privacy Officer</strong></p>
+              <p><strong className="text-foreground">Acepoint Mental Health — Privacy Officer</strong></p>
               <p>Phone: <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a></p>
               <p>Email: <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors">ace@acepointhealth.com</a></p>
               <p>Address: 2404 Greenhouse Rd, Suite D 1020, Houston, TX 77084</p>
