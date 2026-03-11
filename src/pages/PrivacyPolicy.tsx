@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="font-display text-2xl font-bold mb-3 text-foreground">Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Acepoint Health ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully.
+              Acepoint Mental Health ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully.
             </p>
           </div>
 
