@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Phone, Mail, MapPin, Printer } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -20,20 +21,21 @@ const Contact = () => {
 
       <section className="pt-24 md:pt-32 pb-12 md:pb-20">
         <div className="container px-5 md:px-8">
-          <h1 className="font-display text-3xl md:text-5xl font-bold max-w-3xl leading-tight">
-            We'd Love to <span className="text-primary">Hear From You</span>
-          </h1>
-          <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
-            Reach out to schedule an appointment, ask a question, or simply learn more about our services.
-          </p>
+          <ScrollReveal>
+            <h1 className="font-display text-3xl md:text-5xl font-bold max-w-3xl leading-tight">
+              We'd Love to <span className="text-primary">Hear From You</span>
+            </h1>
+            <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
+              Reach out to schedule an appointment, ask a question, or simply learn more about our services.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
       <section className="pb-16 md:pb-24">
         <div className="container px-5 md:px-8">
           <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
-            {/* Form */}
-            <div className="lg:col-span-3">
+            <ScrollReveal className="lg:col-span-3">
               <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-6 md:p-8 border border-border shadow-sm">
                 <h2 className="font-display text-xl md:text-2xl font-semibold mb-5 md:mb-6">Send Us a Message</h2>
                 <div className="grid sm:grid-cols-2 gap-4 mb-4">
@@ -86,46 +88,46 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
-            </div>
+            </ScrollReveal>
 
-            {/* Info */}
-            <div className="lg:col-span-2 space-y-6 md:space-y-8">
-              <div>
-                <h3 className="font-display text-lg md:text-xl font-semibold mb-3 md:mb-4">Contact Information</h3>
-                <div className="space-y-4 text-sm text-muted-foreground">
-                  <div className="flex items-start gap-3">
-                    <Phone size={18} className="text-primary mt-0.5 shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Phone</p>
-                      <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a>
-                      <a href="tel:3462024840" className="hover:text-primary transition-colors block">(346) 202-4840</a>
+            <ScrollReveal className="lg:col-span-2" delay={0.15} direction="right">
+              <div className="space-y-6 md:space-y-8">
+                <div>
+                  <h3 className="font-display text-lg md:text-xl font-semibold mb-3 md:mb-4">Contact Information</h3>
+                  <div className="space-y-4 text-sm text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <Phone size={18} className="text-primary mt-0.5 shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Phone</p>
+                        <a href="tel:3252210076" className="hover:text-primary transition-colors">(325) 221-0076</a>
+                        <a href="tel:3462024840" className="hover:text-primary transition-colors block">(346) 202-4840</a>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Printer size={18} className="text-primary mt-0.5 shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Fax</p>
-                      <a href="tel:8323363864" className="hover:text-primary transition-colors">(832) 336-3864</a>
+                    <div className="flex items-start gap-3">
+                      <Printer size={18} className="text-primary mt-0.5 shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Fax</p>
+                        <a href="tel:8323363864" className="hover:text-primary transition-colors">(832) 336-3864</a>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Mail size={18} className="text-primary mt-0.5 shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Email</p>
-                      <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors break-all">ace@acepointhealth.com</a>
+                    <div className="flex items-start gap-3">
+                      <Mail size={18} className="text-primary mt-0.5 shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Email</p>
+                        <a href="mailto:ace@acepointhealth.com" className="hover:text-primary transition-colors break-all">ace@acepointhealth.com</a>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Address</p>
-                      <a href="https://maps.google.com/?q=2404+Greenhouse+Rd+Suite+D+1020+Houston+TX+77084" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</a>
+                    <div className="flex items-start gap-3">
+                      <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Address</p>
+                        <a href="https://maps.google.com/?q=2404+Greenhouse+Rd+Suite+D+1020+Houston+TX+77084" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">2404 Greenhouse Rd<br />Suite D 1020, Houston, TX 77084</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
