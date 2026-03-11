@@ -16,7 +16,7 @@ const HipaaNotice = () => {
             </h1>
           </div>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
-            Effective Date: January 1, 2026 — Acepoint Health
+            Effective Date: January 1, 2026 — Acepoint Mental Health
           </p>
         </div>
       </section>
