@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="container py-10 md:py-16 px-5 md:px-8">
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
         <div className="sm:col-span-2">
-          <h3 className="font-display text-xl md:text-2xl font-bold mb-2 md:mb-3">Acepoint Health</h3>
+          <img src={logo} alt="Acepoint Mental Health" className="h-12 w-auto mb-3 brightness-0 invert" />
           <p className="text-primary-foreground/80 max-w-md text-sm leading-relaxed">
             Compassionate, evidence-based mental health care designed to help you thrive. 
             Your journey to wellness starts here.
