@@ -35,7 +35,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-primary-foreground/20 mt-8 md:mt-12 pt-5 md:pt-6 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 text-xs text-primary-foreground/60">
-        <span>© 2026 Acepoint Health. All rights reserved.</span>
+        <span>© 2026 Acepoint Mental Health. All rights reserved.</span>
         <span className="flex items-center gap-1">Made with <Heart size={12} className="text-accent" /> for your wellbeing</span>
       </div>
     </div>

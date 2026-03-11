@@ -105,7 +105,7 @@ const HipaaNotice = () => {
               Federal & State Regulations
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Acepoint Health complies with all applicable federal and state regulations regarding mental health care and privacy, including:
+              Acepoint Mental Health complies with all applicable federal and state regulations regarding mental health care and privacy, including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
               <li><strong className="text-foreground">HIPAA Privacy Rule</strong> (45 CFR Part 160 and Subparts A and E of Part 164)</li>

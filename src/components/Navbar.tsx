@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="font-display text-2xl font-bold text-primary tracking-tight">
-          Acepoint Health
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Acepoint Mental Health" className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop */}

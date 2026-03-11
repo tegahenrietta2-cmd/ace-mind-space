@@ -57,7 +57,7 @@ const About = () => (
         <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 md:mb-6">Our Story</h2>
         <p className="text-muted-foreground leading-relaxed mb-4 text-sm md:text-base">
           Founded with the vision that everyone deserves compassionate mental health care, 
-          Acepoint Health has grown from a small practice into a trusted wellness partner 
+          Acepoint Mental Health has grown from a small practice into a trusted wellness partner 
           for hundreds of individuals and families in our community.
         </p>
         <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
