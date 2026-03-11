@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Acepoint Mental Health" className="h-10 md:h-12 w-auto" />
-          <span className="font-display text-lg md:text-xl font-bold text-primary tracking-tight">Acepoint Mental Health</span>
+      <div className="container flex items-center justify-between h-16 md:h-20 px-5 md:px-8">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <img src={logo} alt="Acepoint Mental Health" className="h-9 md:h-11 w-auto" />
+          <span className="font-display text-base md:text-lg font-bold text-primary tracking-tight leading-tight">Acepoint<br className="sm:hidden" /> Mental Health</span>
         </Link>
 
         {/* Desktop */}
