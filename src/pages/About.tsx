@@ -14,28 +14,25 @@ const About = () => (
     <Navbar />
 
     <section className="pt-24 md:pt-32 pb-12 md:pb-20">
-      <div className="container px-5 md:px-8">
+      <div className="container px-5 md:px-8 max-w-4xl">
         <ScrollReveal>
-          <h1 className="font-display text-3xl md:text-5xl font-bold max-w-3xl leading-tight">
-            Dedicated to Your <span className="text-primary">Mental Health</span> & Wellbeing
+          <h1 className="font-display text-3xl md:text-5xl font-bold text-center leading-tight mb-8 md:mb-12">
+            About <span className="text-primary">Us</span>
           </h1>
-          <p className="mt-4 md:mt-6 text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
-            At Acepoint Mental Health, we believe that mental wellness is the foundation of a fulfilling life. 
-            Our team of licensed professionals provides personalized, evidence-based therapy in a warm 
-            and welcoming environment.
-          </p>
-        </ScrollReveal>
-      </div>
-    </section>
-
-    <section className="py-12 md:py-20 bg-secondary">
-      <div className="container px-5 md:px-8">
-        <ScrollReveal>
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">Our Mission</h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto text-sm md:text-base">
-            To provide accessible, high-quality mental health care that empowers individuals 
-            and families to live their most authentic lives.
-          </p>
+          <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <p>
+              Acepoint Mental Health provides comprehensive psychiatric evaluation and personalized treatment for children, adolescents, adults, and older adults. We care for individuals experiencing attention deficit hyperactivity disorder (ADHD), anxiety, depression, mood disorders, trauma-related conditions (PTSD), substance use disorder, and insomnia.
+            </p>
+            <p>
+              Our clinical approach begins with a thorough initial assessment of each patient’s symptoms. It develops an individualized care plan using evidence-informed practices, ongoing medication management, monitoring, and collaborative decision-making to support accurate diagnosis, symptom improvement, and long-term stability.
+            </p>
+            <p>
+              At Acepoint Mental Health, our focus is to help every patient achieve better emotional regulation, improved concentration, healthier sleep, stronger coping skills, and a higher quality of life. We provide care in a private, respectful, and supportive environment where patients feel heard, understood, and actively involved in every stage of treatment.
+            </p>
+            <p>
+              For your convenience, Acepoint Mental Health offers secure and confidential telehealth consultations, making expert psychiatric care more accessible wherever you are. Same-day appointments may be available. Call Acepoint Mental Health or schedule an appointment online today to receive personalized care delivered with clinical expertise, empathy, and compassion.
+            </p>
+          </div>
         </ScrollReveal>
       </div>
     </section>
