@@ -1,84 +1,109 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
-const faqs = [
+interface FAQItem {
+  question: string;
+  answer: string;
+  ctas?: { label: string; href: string; external?: boolean }[];
+}
+
+const faqs: FAQItem[] = [
   {
     question: "What mental health conditions do you treat?",
     answer:
       "We evaluate and treat a broad range of conditions, including anxiety, depression, ADHD, bipolar disorder, trauma-related disorders, OCD, sleep problems, psychotic disorders, and other psychiatric concerns.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "Do you provide care for children, adults, and older adults?",
     answer:
       "Yes. We provide psychiatric care across the lifespan, including children, adolescents, adults, and seniors. Age availability may vary by provider.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "Do I have to live in Texas to receive care?",
     answer:
       "You must be physically located in Texas during your appointment. We serve patients throughout the state, including rural and underserved communities.",
+    ctas: [{ label: "Schedule a Visit", href: "/contact" }],
   },
   {
     question: "How does a telehealth appointment work?",
     answer:
       "You meet privately with your provider through secure video using a smartphone, tablet, or computer. You can attend from home or another quiet, private location.",
+    ctas: [{ label: "Schedule a Visit", href: "/contact" }],
   },
   {
     question: "What happens during my first appointment?",
     answer:
       "Your provider will discuss your symptoms, health history, medications, current concerns, and treatment goals. You will then receive an individualized treatment plan.",
+    ctas: [{ label: "Schedule a Visit", href: "/contact" }],
   },
   {
     question: "Do you provide medication management?",
     answer:
       "Yes. When clinically appropriate, our psychiatric providers can prescribe and manage medications, monitor your progress, and make adjustments based on your response.",
+    ctas: [{ label: "Schedule a Visit", href: "/contact" }],
   },
   {
     question: "Can you prescribe controlled medications through telehealth?",
     answer:
       "Certain controlled medications may be prescribed when clinically appropriate and permitted by federal and Texas law. Prescriptions are never guaranteed and require a complete psychiatric evaluation and ongoing monitoring.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "Do you provide therapy?",
     answer:
       "We may provide therapy, supportive counseling, or referrals based on your needs and the services available within our practice. Contact us to confirm the availability of current therapy.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "Do you accept insurance?",
     answer:
-      "We accept selected insurance plans and may also offer self-pay options. Please get in touch with us or use our insurance verification process to confirm your specific benefits before scheduling.",
+      "We accept Medicare/Medicaid, Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare/Optum, and Humana. Please contact us to verify your specific benefits before scheduling.",
+    ctas: [{ label: "Contact Us", href: "mailto:ace@acepointhealth.com" }],
   },
   {
     question: "How much does an appointment cost?",
     answer:
       "Your cost depends on the type of appointment, your insurance coverage, and any deductible or copayment. We provide clear pricing information before your visit whenever possible.",
+    ctas: [{ label: "Contact Us", href: "mailto:ace@acepointhealth.com" }],
   },
   {
     question: "How soon can I get an appointment?",
     answer:
-      "Appointment availability varies, but we work to offer timely access to care. Check our online schedule or contact our office to find the earliest available appointment.",
+      "Appointment availability varies, but we work to offer timely access to care. Same-day appointments may be available. Check our online schedule or contact our office to find the earliest available appointment.",
+    ctas: [
+      { label: "Schedule a Visit", href: "/contact" },
+      { label: "Call Us", href: "tel:832-336-3864" },
+    ],
   },
   {
     question: "What do I need for my appointment?",
     answer:
       "You will need a reliable internet connection, a device with a camera and microphone, a photo ID, your medication list, insurance information, and a private place to talk.",
+    ctas: [{ label: "Schedule a Visit", href: "/contact" }],
   },
   {
     question: "Is telehealth private and secure?",
     answer:
       "Yes. We use secure technology and follow applicable privacy requirements to protect your personal and health information. We also recommend attending from a quiet, private location.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "Can a family member join my appointment?",
     answer:
       "Yes, when appropriate and with the patient’s permission. Parents or legal guardians are generally involved in the care of minors based on age, clinical needs, and applicable law.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "What if I need laboratory testing or an in-person examination?",
     answer:
       "Your provider may order laboratory tests, request medical records, coordinate with another healthcare professional, or recommend an in-person evaluation when necessary for safe treatment.",
+    ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
     question: "What if I am experiencing a mental health emergency?",
@@ -89,6 +114,10 @@ const faqs = [
     question: "How do I get started?",
     answer:
       "Schedule an appointment online or contact our office. Our team will help you complete registration, verify insurance when applicable, and prepare for your first visit.",
+    ctas: [
+      { label: "Schedule a Visit", href: "/contact" },
+      { label: "Contact Us", href: "mailto:ace@acepointhealth.com" },
+    ],
   },
 ];
 
@@ -146,6 +175,29 @@ const FAQ = () => {
                       <p className="px-4 md:px-6 pb-4 md:pb-6 text-muted-foreground text-sm md:text-base leading-relaxed">
                         {faq.answer}
                       </p>
+                      {faq.ctas && faq.ctas.length > 0 && (
+                        <div className="px-4 md:px-6 pb-4 md:pb-6 flex flex-wrap gap-3">
+                          {faq.ctas.map((cta, ctaIndex) =>
+                            cta.href.startsWith("/") ? (
+                              <Link
+                                key={ctaIndex}
+                                to={cta.href}
+                                className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                              >
+                                {cta.label}
+                              </Link>
+                            ) : (
+                              <a
+                                key={ctaIndex}
+                                href={cta.href}
+                                className="inline-flex items-center justify-center rounded-lg border border-primary px-5 py-2.5 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                              >
+                                {cta.label}
+                              </a>
+                            )
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
