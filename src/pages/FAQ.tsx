@@ -61,9 +61,9 @@ const faqs: FAQItem[] = [
     ctas: [{ label: "Contact Us", href: "/contact" }],
   },
   {
-    question: "Do you are accepted?",
+    question: "Do you accept insurance?",
     answer:
-      "We accept Medicare/Medicaid, Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare/Optum, and Humana. Please contact us to verify your specific benefits before scheduling.
+      "We accept Medicare/Medicaid, Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare/Optum, and Humana. Please contact us to verify your specific benefits before scheduling.",
     ctas: [{ label: "Contact Us", href: "mailto:ace@acepointhealth.com" }],
   },
   {
