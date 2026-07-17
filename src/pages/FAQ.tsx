@@ -112,9 +112,6 @@ const FAQ = () => {
                 Frequently Asked Questions
               </h1>
             </div>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
-              Find answers to common questions about our services, appointments, and policies. If you need more help, feel free to contact us.
-            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -165,7 +162,7 @@ const FAQ = () => {
                 Our team is happy to help. Reach out and we’ll get back to you as soon as possible.
               </p>
               <a
-                href="mailto:ace@acepointhealth.com"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
               >
                 Contact Us
