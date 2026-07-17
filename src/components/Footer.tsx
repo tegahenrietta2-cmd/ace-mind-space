@@ -18,6 +18,7 @@ const Footer = () => (
           <div className="flex flex-col gap-2 text-sm text-primary-foreground/80">
             <Link to="/about" className="hover:text-primary-foreground transition-colors">About Us</Link>
             <Link to="/services" className="hover:text-primary-foreground transition-colors">Services</Link>
+            <Link to="/faq" className="hover:text-primary-foreground transition-colors">FAQ</Link>
             <Link to="/contact" className="hover:text-primary-foreground transition-colors">Contact</Link>
             <Link to="/hipaa-notice" className="hover:text-primary-foreground transition-colors">HIPAA Notice</Link>
             <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
