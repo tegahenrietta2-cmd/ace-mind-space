@@ -175,6 +175,29 @@ const FAQ = () => {
                       <p className="px-4 md:px-6 pb-4 md:pb-6 text-muted-foreground text-sm md:text-base leading-relaxed">
                         {faq.answer}
                       </p>
+                      {faq.ctas && faq.ctas.length > 0 && (
+                        <div className="px-4 md:px-6 pb-4 md:pb-6 flex flex-wrap gap-3">
+                          {faq.ctas.map((cta, ctaIndex) =>
+                            cta.href.startsWith("/") ? (
+                              <Link
+                                key={ctaIndex}
+                                to={cta.href}
+                                className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                              >
+                                {cta.label}
+                              </Link>
+                            ) : (
+                              <a
+                                key={ctaIndex}
+                                href={cta.href}
+                                className="inline-flex items-center justify-center rounded-lg border border-primary px-5 py-2.5 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                              >
+                                {cta.label}
+                              </a>
+                            )
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
